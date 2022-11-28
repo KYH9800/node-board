@@ -24,7 +24,7 @@ app.use(
 );
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('board api start!!');
 });
 
 app.use('/posts', postRouter); // post work
