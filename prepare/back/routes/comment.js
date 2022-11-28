@@ -4,10 +4,11 @@ const router = express.Router();
 const Comments = require('../schemas/comments');
 const Posts = require('../schemas/posts');
 
-// POST/comments, 댓글 생성
+// POST/comments/:postId, 댓글 생성
 router.post('/:postId', async (req, res) => {
   try {
     const { postId } = req.params;
+    console.log(postId);
     const result = await Posts.find({ _id: postId });
     const { user, password, content } = req.body;
     console.log('comment req.body: ', req.body);
@@ -34,13 +35,6 @@ router.post('/:postId', async (req, res) => {
       });
     }
 
-    if (!result.length || !postId) {
-      return res.status(400).json({
-        success: false,
-        message: '데이터 형식이 올바르지 않습니다.',
-      });
-    }
-
     const createdComment = await Comments.create({
       postId,
       user,
@@ -53,7 +47,12 @@ router.post('/:postId', async (req, res) => {
       comments: createdComment,
     });
   } catch (error) {
-    console.error(error);
+    // 공식문서 err 사용하는 메서드 / err custom
+    // console.log('error.kind: ', error.kind);
+    // if (!error.kind) {
+    //   return res.status(400).json({ error: '데이터 형식이 올바르지 않습니다.' });
+    // }
+    console.error('error: ', error);
     return res.status(400).json({ error: 'error has occured' });
   }
 });

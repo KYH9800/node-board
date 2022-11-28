@@ -6,7 +6,14 @@ const Posts = require('../schemas/posts');
 // GET /posts, 게시글 전체 조회
 router.get('/', async (req, res) => {
   try {
-    const result = await Posts.find({}, { __v: false });
+    const result = await Posts.find(
+      {},
+      {
+        __v: false,
+        password: false,
+        content: false,
+      }
+    );
     console.log('전체 조회: ', result);
 
     res.json({ posts: result });
@@ -20,7 +27,7 @@ router.get('/', async (req, res) => {
 router.get('/:postId', async (req, res) => {
   try {
     const { postId } = req.params;
-    const result = await Posts.find({ _id: postId }, { __v: false });
+    const result = await Posts.find({ _id: postId }, { __v: false, password: false });
     console.log('상세 조회: ', result);
 
     res.json({ posts: result });

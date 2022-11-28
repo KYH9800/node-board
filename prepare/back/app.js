@@ -16,6 +16,7 @@ connect();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// cors
 app.use(
   cors({
     origin: true,
