@@ -12,6 +12,7 @@ router.get('/', async (req, res) => {
     res.json({ posts: result });
   } catch (error) {
     console.error(error);
+    return res.status(400).json({ error: 'error has occured' });
   }
 });
 
@@ -25,6 +26,7 @@ router.get('/:postId', async (req, res) => {
     res.json({ posts: result });
   } catch (error) {
     console.error(error);
+    return res.status(400).json({ error: 'error has occured' });
   }
 });
 

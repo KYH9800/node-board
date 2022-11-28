@@ -13,29 +13,33 @@ router.post('/:postId', async (req, res) => {
     console.log('comment req.body: ', req.body);
     console.log('postId: ', result);
 
-    if (!content)
-      res.status(400).json({
+    if (!content) {
+      return res.status(400).json({
         success: false,
         message: '댓글 내용을 입력해주세요.',
       });
+    }
 
-    if (!user)
-      res.status(400).json({
+    if (!user) {
+      return res.status(400).json({
         success: false,
         message: '작성자의 닉네임을 입력해주세요.',
       });
+    }
 
-    if (!password)
-      res.status(400).json({
+    if (!password) {
+      return res.status(400).json({
         success: false,
         message: '비밀번호를 입력해주세요.',
       });
+    }
 
-    if (!result.length || !postId)
-      res.status(400).json({
+    if (!result.length || !postId) {
+      return res.status(400).json({
         success: false,
         message: '데이터 형식이 올바르지 않습니다.',
       });
+    }
 
     const createdComment = await Comments.create({
       postId,
@@ -44,12 +48,13 @@ router.post('/:postId', async (req, res) => {
       content,
     });
 
-    res.json({
+    return res.json({
       message: '댓글을 생성하였습니다.',
       comments: createdComment,
     });
   } catch (error) {
     console.error(error);
+    return res.status(400).json({ error: 'error has occured' });
   }
 });
 
@@ -101,6 +106,7 @@ router.put('/:commentId', async (req, res) => {
     });
   } catch (error) {
     console.error(error);
+    return res.status(400).json({ error: 'error has occured' });
   }
 });
 

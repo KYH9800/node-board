@@ -28,46 +28,57 @@ router.post('/', async (req, res) => {
     });
   } catch (error) {
     console.error(error);
+    return res.status(400).json({ error: 'error has occured' });
   }
 });
 
 // PATCH/posts, 게시글 수정
 router.put('/:postId', async (req, res) => {
-  const { postId } = req.params;
-  const { password, title, content } = req.body;
-  const result = await Posts.find({ _id: postId });
-  console.log('update post 찾기: ', result);
+  try {
+    const { postId } = req.params;
+    const { password, title, content } = req.body;
+    const result = await Posts.find({ _id: postId });
+    console.log('update post 찾기: ', result);
 
-  if (result.length) {
-    await Posts.updateOne(
-      { _id: postId },
-      {
-        $set: { password: password, title: title, content: content },
-      }
-    );
+    if (result.length) {
+      await Posts.updateOne(
+        { _id: postId },
+        {
+          $set: { password: password, title: title, content: content },
+        }
+      );
+    }
+
+    res.json({
+      message: '게시글을 수정하였습니다.',
+      password,
+      title,
+      content,
+    });
+  } catch (error) {
+    console.error(error);
+    return res.status(400).json({ error: 'error has occured' });
   }
-
-  res.json({
-    message: '게시글을 수정하였습니다.',
-    password,
-    title,
-    content,
-  });
 });
 
 // DELETE/posts, 게시글 삭제
 router.delete('/:postId', async (req, res) => {
-  const { postId } = req.params;
-  const result = await Posts.find({ _id: postId });
-  console.log('삭제할 게시글 찾기: ', result);
+  try {
+    const { postId } = req.params;
+    const result = await Posts.find({ _id: postId });
+    console.log('삭제할 게시글 찾기: ', result);
 
-  if (result.length > 0) {
-    await Posts.deleteOne({ _id: postId });
+    if (result.length > 0) {
+      await Posts.deleteOne({ _id: postId });
+    }
+
+    res.json({
+      message: '게시글을 삭제하였습니다.',
+    });
+  } catch (error) {
+    console.error(error);
+    return res.status(400).json({ error: 'error has occured' });
   }
-
-  res.json({
-    message: '게시글을 삭제하였습니다.',
-  });
 });
 
 module.exports = router;
