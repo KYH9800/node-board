@@ -38,6 +38,7 @@ router.post('/:postId', async (req, res) => {
       });
 
     const createdComment = await Comments.create({
+      postId,
       user,
       password,
       content,
