@@ -6,5 +6,5 @@
 ## Framework(Why)
 - todo
 
-## API
+## API 명세서
 - todo
