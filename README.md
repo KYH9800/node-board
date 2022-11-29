@@ -1,4 +1,4 @@
-## node-board API
+## node-board API Server
 
 ## Stack
 - todo
