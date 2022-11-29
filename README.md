@@ -3,7 +3,7 @@
 ## Stack
 - todo
 
-## Framework(Why?)
+## Framework(Why)
 - todo
 
 ## API
