@@ -6,16 +6,21 @@
 3) AWS 배포
 ---
 Directory Structure
-- app.js
-- routes(경로)
- - comment.js
- - comments.js
- - post.js
- - posts.js
-- schemas(경로)
- -  
+```
+.
+├── app.js
+├── routes
+│   ├── comment.js
+│   ├── comments.js
+│   ├── post.js
+│   └── posts.js
+└── schemas
+    ├── index.js
+    ├── comments.js
+    └── posts.js
+```
 ---
-
+```
 1. 전체 게시글 목록 조회 API
     - 제목, 작성자명, 작성 날짜를 조회하기
     - 작성 날짜 기준으로 내림차순 정렬하기
@@ -39,7 +44,7 @@ Directory Structure
     - 댓글 내용을 입력하고 댓글 수정 API를 호출한 경우 작성한 댓글을 수정하기
 9. 댓글 삭제
     - 원하는 댓글을 삭제하기
-
+```
 ## Stack
 - todo
 
