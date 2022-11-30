@@ -51,12 +51,10 @@
 ## Framework(Why)
 - todo
 
-## API 명세서
-![image](https://user-images.githubusercontent.com/61128538/204846569-37762992-e316-45f5-93a8-fdeeaccab588.png)
-[게시글 조회](https://www.notion.so/af23103bf2304feabb40520bafa72a25)
-![image](https://user-images.githubusercontent.com/61128538/204846651-75671f14-da2a-4a04-b510-178c2e2f8e7c.png)
+## API 명세서(Notion)
+![image](https://user-images.githubusercontent.com/61128538/204847206-d4d1d6dd-0108-40bc-82cf-4f7e824b3772.png)
+![image](https://user-images.githubusercontent.com/61128538/204847440-732a7882-3592-4bfc-82b9-bf9e422f8a81.png)
+![image](https://user-images.githubusercontent.com/61128538/204847313-c958568a-0e72-4c6f-9e43-a5d2a1049142.png)
 
-[게시글 조회](https://www.notion.so/af23103bf2304feabb40520bafa72a25)
-![image](https://user-images.githubusercontent.com/61128538/204846928-65f20467-958b-4ecb-8813-561c8ac2f849.png)
 
 
