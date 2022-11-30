@@ -1,11 +1,11 @@
 ## node-board API Server
 
-[목표]
+### [목표]
 1) 서비스 완성
 2) Directory Structure
 3) AWS 배포
 ---
-Directory Structure
+### Directory Structure
 ```
 .
 ├── app.js
