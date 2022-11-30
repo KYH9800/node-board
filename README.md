@@ -4,6 +4,15 @@
 1) 서비스 완성
 2) Directory Structure
 3) AWS 배포
+
+---
+## Stack | [Why?](https://velog.io/@sksgur3217?tag=%ED%9A%8C%EA%B3%A0%EB%A1%9D)
+- Node.js
+- mongoDB
+- Express
+- nodemon
+- cors
+
 ---
 ### Directory Structure
 ```
@@ -45,13 +54,6 @@
 9. 댓글 삭제
     - 원하는 댓글을 삭제하기
 ```
----
-## Stack | [Why?](https://velog.io/@sksgur3217?tag=%ED%9A%8C%EA%B3%A0%EB%A1%9D)
-- Node.js
-- mongoDB
-- Express
-- nodemon
-- cors
 
 ---
 ## API 명세서 | [Notion](https://planet-aletopelta-fbc.notion.site/4331253a099e4e7f98e80478fadaa826?v=17a4a5a0e3794f29a6d25a04d21ec525)
