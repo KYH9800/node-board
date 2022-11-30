@@ -13,9 +13,8 @@ router.get('/', async (req, res, next) => {
         password: false,
         content: false,
       }
-    );
+    ).sort({ createdAt: -1 });
     console.log('전체 조회: ', result);
-
     return res.json({ posts: result });
   } catch (error) {
     console.error('error: ', error);
@@ -30,6 +29,10 @@ router.get('/:postId', async (req, res, next) => {
     const { postId } = req.params;
     const result = await Posts.find({ _id: postId }, { __v: false, password: false });
     console.log('상세 조회: ', result);
+
+    if (!result.length) {
+      return res.status(400).json({ message: '해당 게시글이 존재하지 않습니다.' });
+    }
 
     return res.json({ posts: result });
   } catch (error) {

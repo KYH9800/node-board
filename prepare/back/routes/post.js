@@ -41,6 +41,11 @@ router.put('/:postId', async (req, res, next) => {
     const result = await Posts.find({ _id: postId });
     console.log('update post 찾기: ', result);
 
+    if (password !== result[0].password) {
+      // console.log('result[0].password: ', result[0].password);
+      return res.status(400).json({ message: '비밀번호가 일치하지 않습니다.' });
+    }
+
     if (result.length) {
       await Posts.updateOne(
         { _id: postId },
@@ -67,8 +72,14 @@ router.put('/:postId', async (req, res, next) => {
 router.delete('/:postId', async (req, res, next) => {
   try {
     const { postId } = req.params;
+    const { password } = req.body;
     const result = await Posts.find({ _id: postId });
     console.log('삭제할 게시글 찾기: ', result);
+
+    if (password !== result[0].password) {
+      console.log('result[0].password: ', result[0].password);
+      return res.status(400).json({ message: '비밀번호가 일치하지 않습니다.' });
+    }
 
     if (result.length > 0) {
       await Posts.deleteOne({ _id: postId });

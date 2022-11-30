@@ -7,8 +7,20 @@ const Comments = require('../schemas/comments');
 router.get('/:postId', async (req, res, next) => {
   try {
     const { postId } = req.params;
-    const result = await Comments.find({ postId: postId }, { __v: false, password: false });
+    const result = await Comments.find(
+      {
+        postId: postId,
+      },
+      {
+        __v: false,
+        password: false,
+      }
+    ).sort({ createdAt: -1 });
     console.log('댓글 전체: ', result);
+
+    if (!result.length) {
+      return res.status(400).json({ message: '해당 게시글이 존재하지 않습니다.' });
+    }
 
     return res.json({ comments: result });
   } catch (error) {
