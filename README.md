@@ -1,6 +1,6 @@
 ## node-board API Server
 
-### [목표]
+## [목표]
 1) 서비스 완성
 2) Directory Structure
 3) AWS 배포
@@ -14,7 +14,7 @@
 - cors
 
 ---
-### Directory Structure
+## Directory Structure
 ```
 .
 ├── app.js
@@ -28,7 +28,7 @@
     └── post.js
 ```
 ---
-### Requirement: 서비스 구현에 요구되는 사항
+## Requirement: 서비스 구현에 요구되는 사항
 ```
 1. 전체 게시글 목록 조회 API
     - 제목, 작성자명, 작성 날짜를 조회하기
@@ -60,6 +60,3 @@
 ![image](https://user-images.githubusercontent.com/61128538/204847206-d4d1d6dd-0108-40bc-82cf-4f7e824b3772.png)
 ![image](https://user-images.githubusercontent.com/61128538/204847440-732a7882-3592-4bfc-82b9-bf9e422f8a81.png)
 ![image](https://user-images.githubusercontent.com/61128538/204847313-c958568a-0e72-4c6f-9e43-a5d2a1049142.png)
-
-
-
