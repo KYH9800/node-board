@@ -6,7 +6,7 @@
 3) AWS 배포
 ---
 Directory Structure
-.
+
 ├── app.js
 ├── routes
 │   ├── comment.js
@@ -15,8 +15,8 @@ Directory Structure
 │   └── posts.js
 └── schemas
     ├── index.js
-    ├── comment.js
-    └── post.js
+    ├── comment.js
+    └── post.js
 
 ---
 
