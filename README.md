@@ -1,5 +1,5 @@
 ## node-board API Server
-### Requirement: 서비스 구현에 요구되는 사항
+
 [목표]
 1) 서비스 완성
 2) Directory Structure
@@ -20,6 +20,7 @@ Directory Structure
     └── posts.js
 ```
 ---
+### Requirement: 서비스 구현에 요구되는 사항
 ```
 1. 전체 게시글 목록 조회 API
     - 제목, 작성자명, 작성 날짜를 조회하기
