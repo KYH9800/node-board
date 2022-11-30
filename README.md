@@ -57,5 +57,6 @@
 ![image](https://user-images.githubusercontent.com/61128538/204846651-75671f14-da2a-4a04-b510-178c2e2f8e7c.png)
 
 [게시글 조회](https://www.notion.so/af23103bf2304feabb40520bafa72a25)
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/61128538/204846928-65f20467-958b-4ecb-8813-561c8ac2f849.png)
+
 
