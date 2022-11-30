@@ -3,11 +3,8 @@ const app = express();
 const port = 3000;
 // cors
 let cors = require('cors');
-// router
-const postRouter = require('./routes/post');
-const allPostsRouter = require('./routes/posts');
-const commentRouter = require('./routes/comment');
-const allCommentsRouter = require('./routes/comments');
+// index.js in router
+const indexRouter = require('./routes');
 // schemas
 const connect = require('./schemas');
 connect();
@@ -24,14 +21,7 @@ app.use(
   })
 );
 
-app.get('/', (req, res) => {
-  res.send('board api start!!');
-});
-
-app.use('/posts', postRouter); // post work
-app.use('/posts', allPostsRouter); // all posts GET
-app.use('/comments', commentRouter); // comment work
-app.use('/comments', allCommentsRouter); // all comments GET
+app.use('/', indexRouter);
 
 app.listen(port, () => {
   console.log(port, 'port start!!');
