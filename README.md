@@ -10,14 +10,13 @@
 .
 ├── app.js
 ├── routes
-│   ├── comment.js
+│   ├── index.js
 │   ├── comments.js
-│   ├── post.js
 │   └── posts.js
 └── schemas
     ├── index.js
-    ├── comments.js
-    └── posts.js
+    ├── comment.js
+    └── post.js
 ```
 ---
 ### Requirement: 서비스 구현에 요구되는 사항
@@ -53,4 +52,10 @@
 - todo
 
 ## API 명세서
-- todo
+![image](https://user-images.githubusercontent.com/61128538/204846569-37762992-e316-45f5-93a8-fdeeaccab588.png)
+[게시글 조회](https://www.notion.so/af23103bf2304feabb40520bafa72a25)
+![image](https://user-images.githubusercontent.com/61128538/204846651-75671f14-da2a-4a04-b510-178c2e2f8e7c.png)
+
+[게시글 조회](https://www.notion.so/af23103bf2304feabb40520bafa72a25)
+![Uploading image.png…]()
+
