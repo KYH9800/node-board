@@ -6,18 +6,14 @@
 3) AWS 배포
 ---
 Directory Structure
-
-├── app.js /n
-├── routes /n
-│   ├── comment.js /n
-│   ├── comments.js /n
-│   ├── post.js /n
-│   └── posts.js /n
-└── schemas /n
-    ├── index.js /n
-    ├── comment.js /n
-    └── post.js /n
-
+- app.js
+- routes(경로)
+ - comment.js
+ - comments.js
+ - post.js
+ - posts.js
+- schemas(경로)
+ -  
 ---
 
 1. 전체 게시글 목록 조회 API
