@@ -45,11 +45,12 @@
 9. 댓글 삭제
     - 원하는 댓글을 삭제하기
 ```
-## Stack
-- todo
-
-## Framework(Why)
-- todo
+## Stack(Why?)
+- Node.js
+- mongoDB
+- Express
+- nodemon
+- cors
 
 ## API 명세서(Notion)
 ![image](https://user-images.githubusercontent.com/61128538/204847206-d4d1d6dd-0108-40bc-82cf-4f7e824b3772.png)
