@@ -7,16 +7,16 @@
 ---
 Directory Structure
 
-├── app.js
-├── routes
-│   ├── comment.js
-│   ├── comments.js
-│   ├── post.js
-│   └── posts.js
-└── schemas
-    ├── index.js
-    ├── comment.js
-    └── post.js
+├── app.js /n
+├── routes /n
+│   ├── comment.js /n
+│   ├── comments.js /n
+│   ├── post.js /n
+│   └── posts.js /n
+└── schemas /n
+    ├── index.js /n
+    ├── comment.js /n
+    └── post.js /n
 
 ---
 
