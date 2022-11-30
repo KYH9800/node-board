@@ -45,6 +45,7 @@
 9. 댓글 삭제
     - 원하는 댓글을 삭제하기
 ```
+---
 ## Stack | [Why?](https://velog.io/@sksgur3217?tag=%ED%9A%8C%EA%B3%A0%EB%A1%9D)
 - Node.js
 - mongoDB
@@ -52,6 +53,7 @@
 - nodemon
 - cors
 
+---
 ## API 명세서 | [Notion](https://planet-aletopelta-fbc.notion.site/4331253a099e4e7f98e80478fadaa826?v=17a4a5a0e3794f29a6d25a04d21ec525)
 ![image](https://user-images.githubusercontent.com/61128538/204847206-d4d1d6dd-0108-40bc-82cf-4f7e824b3772.png)
 ![image](https://user-images.githubusercontent.com/61128538/204847440-732a7882-3592-4bfc-82b9-bf9e422f8a81.png)
