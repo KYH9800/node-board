@@ -66,4 +66,4 @@
 - 브라우저에서 SOP(Same-Origin Policy) “같은 출처에서만 리소스를 공유할 수 있다”라는 규칙을 가진 정책으로 인해 CORS 에러 발생
 
 ## [해결]
-- Server 에서 CORS 설정, origin 허용으로 문제 해결
+- Server 에서 cross-origin 허용(CORS 설정)을 통한 문제 해결
