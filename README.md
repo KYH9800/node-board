@@ -60,3 +60,7 @@
 ![image](https://user-images.githubusercontent.com/61128538/204847206-d4d1d6dd-0108-40bc-82cf-4f7e824b3772.png)
 ![image](https://user-images.githubusercontent.com/61128538/204847440-732a7882-3592-4bfc-82b9-bf9e422f8a81.png)
 ![image](https://user-images.githubusercontent.com/61128538/204847313-c958568a-0e72-4c6f-9e43-a5d2a1049142.png)
+
+---
+## 트러블슈팅
+1. CORS
