@@ -7,9 +7,9 @@
 
 ---
 ## Stack | [Why?](https://velog.io/@sksgur3217?tag=%ED%9A%8C%EA%B3%A0%EB%A1%9D)
-- Node.js
+- Node.js | [Why?](https://velog.io/@sksgur3217/Why-%EC%99%9C-Node.js%EC%9D%B8%EA%B0%80)
 - mongoDB
-- Express
+- Express | [Why?](https://velog.io/@sksgur3217/Node.js-express%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B4%EA%B3%A0-%EC%99%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%82%98)
 - nodemon
 - cors
 
